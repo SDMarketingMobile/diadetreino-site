@@ -1,0 +1,80 @@
+<table width="300" cellspacing="4" cellpadding="8" border="0" bgcolor="#48D1CC">
+<tr> 
+   <td><font color="#FFFFFF" face="arial, verdana, helvetica"> 
+<b>Calculadora de IMC HTML</b> 
+   </font></td> 
+</tr>
+<tr> 
+   <td bgcolor="#ffffcc"> 
+   <font face="arial, verdana, helvetica"> 
+
+
+
+
+   <head>
+<script type="text/javascript">
+function  calcularIMC() {
+  var peso = eval(document.form.peso.value)
+  var alt = eval(document.form.alt.value)
+  var alt2 = alt / 100
+  var IMC = peso  / (alt2 * alt2)
+  document.form.massacor.value=custRound(IMC,1);
+if (document.form.massacor.value <18.5)
+document.form.comment.value = "Peso Baixo";
+if (document.form.massacor.value >=18.5 && document.form.massacor.value <=24.9)
+document.form.comment.value = "Peso Ideal";
+if (document.form.massacor.value >=25 && document.form.massacor.value <=29.9)
+document.form.comment.value = "Acima do Peso";
+if (document.form.massacor.value >=30 && document.form.massacor.value <=34.9)
+document.form.comment.value = "Obesidade Tipo I";
+if (document.form.massacor.value >=35 && document.form.massacor.value <=39.9)
+document.form.comment.value = "Obesidade Tipo II";
+if (document.form.massacor.value >=40 && document.form.massacor.value <=49.9)
+document.form.comment.value = "Obesidade M?rbida";
+if (document.form.massacor.value >40)
+document.form.comment.value = "Obesidade Extrema";
+}
+function custRound(x,places) {
+  return (Math.round(x*Math.pow(10,places)))/Math.pow(10,places)
+}
+// End -->
+</script>
+</head>
+<body>
+<div align="center">
+<form  name="form" id="form">
+Peso (em Kg)
+<br>
+<input type="Text" name="peso" size="15"> 
+<br>
+Altura (em Cm)
+<br>
+<input type="Text" name="alt" size="15"> 
+<br>
+<br>
+<input type="button" style="Padding: 8pt" value="Calcular IMC" onClick="calcularIMC()" name="button">
+<input type="reset" style="Padding: 8pt" value="Limpar Valores">
+<br>
+<br>
+IMC
+<br>
+<input type="Text" name="massacor" id="massacor" size="15"> 
+<br>
+Avaliacao do IMC
+<br> 
+<input type="Text" name="comment" id="comment" size="15">
+<br>
+<br>
+<center>
+<span style="font-size: x-small;"><a  href= "http://www.emagrecerpravaler.com/dieta-dos-pontos-tabela-de-pontos/" target=”_blank”>Calc. IMC Tabela Dieta Pontos</a></span></center>
+<center>
+<span style="font-size: x-small;"><a  href="" target=?_blank?></a></span></center>
+</form>
+</div>
+</body>
+
+
+   </font> 
+  </td> 
+</tr>
+</table>
