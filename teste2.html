@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Validando Formulários com Javascript</title>
+
+
+<script language="javascript" type="text/javascript">
+	function validar() {
+		var senha = form1.senha.value;
+
+		if (senha != "134215") {
+			alert('cupom invalido');
+			form1.senha.focus();
+			return false;
+		}
+		else
+			window.open("https://pag.ae/bcBWTKR",'_blank');
+	}
+</script>
+</head>
+<body>
+	<form name="form1">
+		Senha:
+		<input name="senha" type="password"><br /><br />
+
+		<input type="submit"  onclick="validar()">
+	</form>
+</body>
+</html>
+
