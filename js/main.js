@@ -183,10 +183,10 @@ jQuery(document).ready(function() {
 	-------------------------------------- */
 	jQuery("#tg-location-map").gmap3({
 		marker: {
-			address: "1600 Elizabeth St, Melbourne, Victoria, Australia",
+			address: "Rua tajipuru 235, São Paulo, Brasil",
 			options: {
-				title: "Fat 2 Fit Fitness Studio",
-				icon: "images/map-marker2.png",
+				title: "Dia De Treino",
+				icon: "images/icon.png",
 			}
 		},
 		map: {
@@ -202,10 +202,10 @@ jQuery(document).ready(function() {
 	-------------------------------------- */
 	jQuery("#tg-location-map-v2").gmap3({
 		marker: {
-			address: "1600 Elizabeth St, Melbourne, Victoria, Australia",
+			address: "Rua tajipuru 235, São Paulo, Brasil",
 			options: {
-				title: "Fat 2 Fit Fitness Studio",
-				icon: "images/map-marker.png",
+				title: "Dia De Treino",
+				icon: "images/icon.png",
 			}
 		},
 		map: {
@@ -221,10 +221,10 @@ jQuery(document).ready(function() {
 	-------------------------------------- */
 	jQuery("#tg-location-map-v3").gmap3({
 		marker: {
-			address: "1600 Elizabeth St, Melbourne, Victoria, Australia",
+			address: "Rua tajipuru 235, São Paulo, Brasil",
 			options: {
-				title: "Fat 2 Fit Fitness Studio",
-				icon: "images/map-marker.png",
+				title: "Dia De Treino",
+				icon: "images/icon.png",
 			}
 		},
 		map: {
@@ -240,10 +240,10 @@ jQuery(document).ready(function() {
 	-------------------------------------- */
 	jQuery("#tg-location-map-v4").gmap3({
 		marker: {
-			address: "1600 Elizabeth St, Melbourne, Victoria, Australia",
+			address: "Rua tajipuru 235, São Paulo, Brasil",
 			options: {
-				title: "Fat 2 Fit Fitness Studio",
-				icon: "images/map-marker.png",
+				title: "Dia De Treino",
+				icon: "images/icon.png",
 			}
 		},
 		map: {
@@ -259,10 +259,10 @@ jQuery(document).ready(function() {
 	-------------------------------------- */
 	jQuery("#tg-location-map-v5").gmap3({
 		marker: {
-			address: "1600 Elizabeth St, Melbourne, Victoria, Australia",
+			address: "Rua tajipuru 235, São Paulo, Brasil",
 			options: {
-				title: "Fat 2 Fit Fitness Studio",
-				icon: "images/map-marker.png",
+				title: "Dia De Treino",
+				icon: "images/icon.png",
 			}
 		},
 		map: {

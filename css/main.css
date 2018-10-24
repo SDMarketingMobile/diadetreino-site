@@ -902,7 +902,7 @@ body.tg-home .tg-main section:last-child{padding:80px 0;}
 	top:350%;
 	right:0;
 	left:auto;
-	width:400px;
+	width:369px;
 	float:left;
 	margin:0;
 	padding:0;
@@ -913,9 +913,10 @@ body.tg-home .tg-main section:last-child{padding:80px 0;}
 	position:absolute;
 }
 .tg-addnav ul li.tg-dropdown.open .tg-dropdownmenu{
-	top:245%;
+	top:173%;
 	visibility:visible;
 	opacity:1;
+	right: -83px;
 }
 .tg-addnav ul .tg-dropdown .tg-dropdownmenu li{
 	width:100%;
@@ -1005,7 +1006,7 @@ body.tg-home .tg-main section:last-child{padding:80px 0;}
 	font-size: 14px;
 	background: none;
 	display: inline-block;
-	padding: 0 50px;
+	padding: 0 38px;
 	line-height: 40px;
 }
 .tg-btn-area .tg-btn + .tg-btn{margin:0 0 0 20px;}
@@ -1177,12 +1178,12 @@ body.tg-home .tg-main section:last-child{padding:80px 0;}
 }
 .tg-videobox img{
 	z-index: 1;
-	opacity: 0;
+	opacity: 1;
 	width: 100%;
 	height: auto;
 	display: block;
 	position: relative;
-	visibility: hidden;
+	visibility: visible;
 }
 .tg-videobox iframe{
 	top: 0;
@@ -1191,7 +1192,7 @@ body.tg-home .tg-main section:last-child{padding:80px 0;}
 	z-index: 2;
 	width: 100%;
 	height: 100%;
-	opacity: 0.50;
+	opacity: 1.00;
 	position: absolute;
 }
 .tg-aboutus .tg-videobox{
@@ -4068,3 +4069,22 @@ body.tg-commingsoon-page #tg-main{
 .mCSB_scrollTools .mCSB_buttonLeft,
 .mCSB_scrollTools .mCSB_buttonRight,
 .tg-themescrollbar .mCSB_dragger .mCSB_dragger_bar{opacity: 1 !important;}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:10px;
+	right:10px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}

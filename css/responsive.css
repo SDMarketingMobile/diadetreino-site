@@ -263,8 +263,8 @@
 	.tg-aboutus .tg-videobox{margin: 0 0 15px;}
 	.tg-videoarea,
 	.tg-formarea{width: 100%;}
-	.tg-homebanner .tg-videobox .tg-videoholder {min-height: 250px;}
-	.tg-homebanner .tg-videobox .tg-videoholder img{display: none;}
+	.tg-homebanner .tg-videobox .tg-videoholder {min-height: 196px;}
+	.tg-homebanner .tg-videobox .tg-videoholder img{display: initial;}
 	.tg-formarea:before{display: none;}
 	.tg-testimonials,
 	.tg-getfreeebook{padding: 30px;}

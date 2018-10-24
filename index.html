@@ -20,14 +20,22 @@
 	<link rel="stylesheet" href="css/owl.theme.css">
 	<link rel="stylesheet" href="css/customScrollbar.css">
 	<link rel="stylesheet" href="css/transitions.css">
+	<link rel="stylesheet" href="css/modal.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/color.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="icon" href="images/icon.png" width="140" height="140">
-	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+	
+
 
 </head>
 <body class="tg-home">
+<a href="https://api.whatsapp.com/send?phone=5511980264884&text=Ola preciso de uma consultoria." class="float" target="_blank">
+	<i class="fa fa-whatsapp my-float"></i>
+	</a>
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -54,10 +62,8 @@
 									<ul>
 										<li><a href="aboutus.html">Sobre Diogo Franco</a></li>
 										<li><a href="bloggrid.html">MIDIA</a></li>
-										<li><a href="bloggrid.html">RESULTADOS RELATOS</a></li>
 										<li><a href="classes.html">planos</a></li>
-										<li><a href="shopgrid.html">STORE</a></li>
-										<li><a href="bloglist.html">ARTIGOS</a></li>
+										<li><a href="commingsoon.html">Loja Dia De Treino</a></li>
 										<li><a href="trainers.html">parceiros</a></li>
 									</ul>
 								</div>
@@ -134,9 +140,8 @@
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="tg-videoarea">
 							<div class="tg-videobox">
-								<div class="tg-videoholder">
-									<img src="images/placeholder-01.jpg" alt="image description">
-									<iframe src="https://www.youtube.com/embed/eM1rRN7tYz8" allowfullscreen=""></iframe>
+								<div class="tg-videoholder">									
+									<img src="images/authors/diogo franco.jpg" class="rounded mx-auto d-block" alt="diogo franco">
 								</div>
 							</div>
 						</div>
@@ -147,13 +152,13 @@
 								<form class="tg-themeform tg-formgetfreeebook">
 									<fieldset>
 										<div class="form-group">
-											<input type="text" name="yourname" class="form-control" placeholder="Nome">
+											<input type="text" name="name" class="form-control" placeholder="Nome">
 										</div>
 										<div class="form-group">
-											<input type="tel" name="yournumber" class="form-control" placeholder="Telefone">
+											<input type="tel" name="number" class="form-control" placeholder="Telefone">
 										</div>
 										<div class="form-group">
-											<input type="email" name="youremailid" class="form-control" placeholder="E-Mail">
+											<input type="email" name="email" class="form-control" placeholder="E-Mail">
 										</div>
 										<button class="tg-btn" type="submit">dicas grátis</button>
 									</fieldset>
@@ -202,7 +207,7 @@
 											<li>Elaboração de planejamento.</li>											
 											<li>-</li>			
 										</ul>
-										<a class="tg-btn" href="classdetail.html"> contrate aqui </a>
+										<button type="button" class="tg-btn " data-toggle="modal" data-target="#requestform" onclick="plano = 1">Contrate agora</button>
 									</div>
 								</div>
 							</div>
@@ -227,7 +232,7 @@
 											<li>1 vídeo conferência de 30min com COACH </li>
 											<li>(Através de agendamento)</li>
 										</ul>
-										<a class="tg-btn" href="classdetail2.html">contrate aqui </a>
+										<button type="button" class="tg-btn " data-toggle="modal" data-target="#requestform" onclick="plano = 2">Contrate agora</button>
 									</div>
 								</div>
 							</div>
@@ -251,7 +256,7 @@
 											<li>3 vídeos conferência de 30min com COACH</li>
 											<li>(Através de agendamento)</li>
 										</ul>
-										<a class="tg-btn" href="classdetail3.html">contrate aqui </a>
+										<button type="button" class="tg-btn " data-toggle="modal" data-target="#requestform" onclick="plano = 3">Contrate agora</button>
 									</div>
 								</div>
 							</div>
@@ -598,22 +603,7 @@
 			<!--************************************
 						Call To Action Start
 			*************************************-->
-			<section class="tg-main-section tg-haslayout tg-parallaximg" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/parallax/bgparallax-02.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 col-xs-12">
-							<div class="tg-calltoaction">
-								<a class="tg-btnplay" href="images/parallax/bgparallax-02.jpg" data-rel="prettyPhoto[iframe]"><i class="icon-play-button"></i></a>
-								<h2>Treino Animal - Para Músculos Monstro</h2>
-								<div class="tg-description">
-									<p>Não Perca seu tempo sem doutrina nos treinos. alcance seus objetivos</p>
-								</div>
-								<a class="tg-btn" href="classes.html">contrate agora!</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+
 			<!--************************************
 						Call To Action End
 			*************************************-->
@@ -762,10 +752,10 @@
 							<div class="tg-contactinfo">
 								<div id="tg-location-map-v2" class="tg-location-map"></div>
 								<ul class="tg-address">
-									<li><i class="fa fa-paper-plane"></i><address>rua diogo franco.</address></li>
-									<li><i class="fa fa-phone"></i><span>(11)1234-1234</span></li>
+									<li><i class="fa fa-paper-plane"></i><address>praça Santo agostinho numero 70 conjunto 25	</address></li>
+									<li><i class="fa fa-phone"></i><span>(11)95371-3128</span></li>
 									<li><i class="fa fa-envelope-o"></i><a href="#">contato@diadetreino.com.br</a></li>
-									<li><i class="fa fa-fax"></i><span>(11) XXXX-XXXX</span></li>
+									
 								</ul>
 							</div>
 						</div>
@@ -787,7 +777,7 @@
 						</div>
 						<div class="tg-col tg-burfats">
 							<div class="tg-title">
-								<h3>Faça voçe mesmo</h3>
+								<h3>ultimas entrevistas</h3>
 							</div>
 							<ul>
 								<li>
@@ -874,18 +864,255 @@
 	<!--************************************
 			Search End
 	*************************************-->
+	<!--************************************
+	Modal Start
+	*************************************-->
+	<div class="modal fade" id="requestform" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Fechar</span></button>
+					<h3 class="modal-title" id="lineModalLabel">Cadastro</h3>
+				</div>
+				<div class="modal-body">
+					<!-- Steps starts here -->
+					<div class="requestwizard">
+						<div class="requestwizard-row setup-panel">
+							<div class="requestwizard-step">
+								<a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+								<p>         Contato        </p>
+							</div>
+							<div class="requestwizard-step">
+								<a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+								<p>Informações Fisica</p>
+							</div>
+							<div class="requestwizard-step">
+								<a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+								<p>       Pagamento       </p>
+							</div>
+						</div>
+					</div>
+
+					<form role="form">
+						<div class="row setup-content" id="step-1">
+							<div class="col-xs-12">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="control-label">Nome</label>
+										<input  maxlength="100" type="text" required="required" class="form-control" placeholder="Nome Completando"  />
+									</div>
+									<div class="form-group">
+										<label class="control-label">CPF</label>
+										<input maxlength="11" type="text" required="required" class="form-control" placeholder="CPF" />
+									</div>
+									<div class="form-group">
+										<label class="control-label">Telefone</label>
+										<input maxlength="11" type="text" required="required" class="form-control" id="telefone" name="telefone" placeholder="Telefone" />
+									</div>
+									<div class="form-group">
+										<label class="control-label">Email address</label>
+										<input maxlength="100" type="text" required="required" class="form-control" placeholder="E-Mail" />
+									</div>
+									<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Proximo</button>
+								</div>
+							</div>
+						</div>
+						<div class="row setup-content" id="step-2">
+							<div class="col-xs-12">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="control-label">Altura</label>
+										<input maxlength="3" type="text" required="required" class="form-control" placeholder="1,80" />
+									</div>
+									<div class="form-group">
+										<label class="control-label">peso</label>
+										<input maxlength="3" type="text" required="required" class="form-control" placeholder="70" />
+									</div>
+									<div class="form-group">
+										<label class="control-label">idade</label>
+										<input maxlength="3" type="text" required="required" class="form-control" placeholder="30"  />
+									</div>									
+									<div class="input-group">
+						                <span class="input-group-btn">
+						                    <button type="button" class="btn btn-default " style="display:none;">
+						                    	
+						                    </button>					                    
+						                </span>
+						            </div>
+						            
+						            <div class="container">
+									    <div class="row"> 
+									    <label class="control-label">Fotos</label>   
+									        <div class="col-sm-3 col-md-1  col-sm-1 ">  
+									            <div class="input-group">
+									                <span class="input-group-btn">									                   
+									                  	<button type="button" class="btn btn-default image-preview-clear close-preview" style="display:none;">
+								                        	<span class="glyphicon glyphicon-remove"></span>
+								                    	</button>
+									                    <div class="btn btn-default image-preview image-preview-input close-preview" id="foto1" >
+									                        <span class="glyphicon glyphicon-folder-open"></span>
+									                        <span class="image-preview-input-title1">Frente</span>
+									                        <input type="file" accept="image/png, image/jpeg " name="input-file-preview" id="fotofrente" />
+									                    </div>
+									                </span>
+									            </div>
+									        </div>									
+									    
+									        <div class="col-sm-3 col-md-1 col-sm-1 ">  
+									            <div class="input-group">
+									                <span class="input-group-btn">									                   
+									                  	<button type="button" class="btn btn-default image-preview-clear " style="display:none;">
+								                        	<span class="glyphicon glyphicon-remove"></span>
+								                    	</button>
+									                    <div class="btn btn-default image-preview image-preview-input" id="foto2" >
+									                        <span class="glyphicon glyphicon-folder-open"></span>
+									                        <span class="image-preview-input-title2">Costas</span>
+									                        <input type="file" accept="image/png, image/jpeg " name="input-file-preview" id="fotocostas" />
+									                    </div>
+									                </span>
+									            </div>
+									        </div>
+
+									        <div class="col-sm-3 col-md-1 col-sm-1 ">  
+									            <div class="input-group">
+									                <span class="input-group-btn">									                   
+									                  	<button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+								                        	<span class="glyphicon glyphicon-remove"></span>
+								                    	</button>
+									                    <div class="btn btn-default image-preview image-preview-input" id="foto3" >
+									                        <span class="glyphicon glyphicon-folder-open"></span>
+									                        <span class="image-preview-input-title3">Perfil D</span>
+									                        <input type="file" accept="image/png, image/jpeg " name="input-file-preview" id="fotoperfild" />
+									                    </div>
+									                </span>
+									            </div>
+									        </div>
+
+									        <div class="col-sm-1 col-md-1 col-sm-1 ">  
+									            <div class="input-group">
+									                <span class="input-group-btn">									                   
+									                  	<button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+								                        	<span class="glyphicon glyphicon-remove"></span>
+								                    	</button>
+									                    <div class="btn btn-default image-preview image-preview-input" id="foto4" >
+									                        <span class="glyphicon glyphicon-folder-open"></span>
+									                        <span class="image-preview-input-title4">Perfil E</span>
+									                        <input type="file" accept="image/png, image/jpeg " name="input-file-preview" id="fotoperfile" />
+									                    </div>
+									                </span>
+									            </div>
+									        </div>									
+									   </div>
+									</div>									    
+								</div>
+								<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Proximo</button>
+							</div>
+						</div>
+						<div class="row setup-content" id="step-3">
+							<div class="col-xs-12">
+								<div class="col-md-12">
+									<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cross-out"></i></span></button>
+					<h4 class="modal-title" id="myModalLabel">CONTRATO DE PRESTAÇÃO DE SERVIÇOS DE CONSULTORIA FITNESS</h4>
+				</div>
+				<div class="modal-body">
+					<div align="center">
+						<form name="form1">							
+							<input id="senha" type="text" placeholder="Cupom de Desconto">
+						</form>
+					</div>
+
+					<hr>
+
+					<form class="tg-themeform tg-formregistration">
+						<fieldset>								
+							<div class="content_wrap">
+								<h5>CONTRATANTE E CONTRATADO</h5>
+								<p>
+									Os termos abaixo se aplicam aos serviços oferecidos por Diogo Leandro almeida Franco, a maiores de 18 anos ou menores com permissão dos pais ou responsável;
+									As partes identificadas têm, entre si justo e acertado o presente Contrato de Prestação de Serviços de Consultoria Técnica de Prazo determinado, que se regerá pelas cláusulas seguintes e pelas condições descritas no presente.
+								</p>
+								<ol>
+									<li>
+										<h5>OBJETO DO CONTRATO</h5>
+										<p>Por favor, leia atentamente os seguintes Termos e Condições. Sua compra ou uso de nossos produtos implica que você leu e aceitou nossos Termos e Condições.</p>
+									</li>
+									<li>
+										<h6>Cláusula 2ª.</h6>
+										<p>O CONTRATANTE declara estar apto clinicamente para executar todos os exercícios físicos determinados pelo CONTRATADO, pois, caso sofra de alguma patologia que possa limitar o seu treinamento, isenta assim o CONTRATADO de qualquer responsabilidade, omitindo o CONTRATANTE ser portador de qualquer tipo de doença.</p>
+									</li>
+									<li>
+										<h6>Cláusula 3ª.</h6>
+										<p>O prazo do presente CONTRATO é MENSAL ou TRIMESTRAL, iniciando – se a partir da confirmação do pagamento. Podendo ser renovado por igual período ou superior quando do seu término.</p>
+									</li>
+									<li>
+										<h6>Cláusula 4ª.</h6>
+										<p>Os programas de treinamento deverão ser executados em uma Academia, ou em local com estrutura semelhante e profissionais habilitados para auxiliar os exercícios.</p>
+									</li>
+									<li>
+										<h6>Cláusula 5ª.</h6>
+										<p>Toda a consultoria será feita via Online, sendo de total responsabilidade do contratante a execução do parcelamento de treinos, ( exercícios). O CONTRATADO não será responsável pela imprudência do contratante ao executar o treinamento.</p>
+									</li>
+									<li>
+										<h6>Cláusula 6ª.</h6>
+										<p>O conteúdo das informações contidas no questionário do perfil do cliente, são de responsabilidade do CONTRATANTE. O CONTRATADO fará uso de tais informações para elaboração do parcelamento de treinamento e, qualquer informação omitida é de responsabilidade do CONTRATANTE. Caso o CONTRATANTE queira alterar quaisquer dados de um questionário para reenvio de um novo parcelamento de treinamento, deverá realizar nova aquisição do produto.</p>
+									</li>
+									<li>
+										<h6>Cláusula 7ª.</h6>
+										<p>A rotina descrita pelo CONTRATANTE no questionário do perfil do cliente deverá ser mantida pelo prazo do contrato. Quaisquer modificações na rotina do CONTRATANTE não serão utilizadas pelo CONTRATADO para elaboração de novo plano de treinamento dentro do mesmo contrato</p>
+									</li>
+									<li>	
+										<h6>Cláusula 8ª.</h6>
+										<p><strong>O CONTRATADO</strong> estará à disposição do cliente em horário comercial de Segunda à Sexta em horário comercial de São Paulo (8:00am ás 18:00pm). Todas as dúvidas serão tiradas via whatsApp ou email. O contratante terá um contato direto via whatsApp com o contratado.</p>
+									</li>
+									<li>
+										<h6>Cláusula 9ª.</h6>
+										<p>Os serviços de consultoria serão pagos através de transferência bancária ou PagSeguro, de acordo com a escolha do CONTRATANTE</p>
+									</li>
+									<li>
+										<h6>Cláusula 10ª.</h6> 
+										<p>Para dirimir quaisquer controvérsias oriundas do contrato, as partes elegem o foro damarca de São Paulo SP.</p>
+									</li>
+								</ol>
+							</div>
+							<div align="center">										
+								<input type="checkbox" id="myCheck"  onclick="myFunction()"> Li e Concordo<p id="text" style="display:none">
+									<br>
+									<a class="tg-btn" onclick="validar()">Pagamento Seguro</a>
+								</div>								
+								<div class="item">
+									<figure><img src="images/payments/pagseguro-forma-pagamento.png" alt="image description"></figure>
+								</div>
+							</fieldset>
+						</form>						
+					</div>					
+				</div>									
+								
+
+				<!-- Form ends here -->
+				
+			</div>
+		</div>
+		
+	</div>
+	<!--************************************
+	Modal End
+	*************************************-->
+
+	<script src="http://maps.google.com/maps/api/js?key=AIzaSyDlh_AGFXk44DuUVd6BDFas5XgqevprVms&language=en"></script>
 	<script src="js/vendor/jquery-library.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="http://maps.google.com/maps/api/js?key=AIzaSyDlh_AGFXk44DuUVd6BDFas5XgqevprVms&language=en"></script>
-	<script src="js/customScrollbar.min.js"></script>
 	<script src="js/function-calcularIMC.js"></script>
+	<script src="js/customScrollbar.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/prettyPhoto.js"></script>
 	<script src="js/jquery-ui.js"></script>
+	<script src="js/validacao.js"></script>
 	<script src="js/countdown.js"></script>
 	<script src="js/parallax.js"></script>
 	<script src="js/countTo.js"></script>
 	<script src="js/appear.js"></script>
+	<script src="js/modal.js"></script>
 	<script src="js/gmap3.js"></script>
 	<script src="js/main.js"></script>
 </body>

@@ -1,59 +1,3 @@
-var plano;
-
-function myFunction() {
-	var checkBox = document.getElementById("myCheck");
-	var text = document.getElementById("text");
-	if (checkBox.checked == true){
-		text.style.display = "block";
-	} else {
-		text.style.display = "none";
-	}
-}
-
-function validar() {
-	var senha = document.getElementById('senha').value;
-
-	if (plano == 1) {
-		if (senha == ""){
-			window.open("https://pag.ae/bmBFN2J", '_blank'); // sem cupom 1
-		}
-		else if (senha != "1111"){
-			alert('cupom invalido');
-			form1.senha.focus();
-			return false;
-		}
-		else
-			window.open("https://pag.ae/7UfUviGxR",'_blank');	// com cupom 1
-	} else if (plano == 2) {
-		if (senha == ""){
-			window.open("https://pag.ae/bbBFTJ8", '_blank'); // sem cupom 2
-		}
-		else if (senha != "2222"){
-			alert('cupom invalido');
-			form1.senha.focus();
-			return false;
-		}
-		else
-			window.open("https://pag.ae/bcB91HR",'_blank');	// com cupom 2
-	} else if (plano == 3) {
-		if (senha == ""){
-			window.open("https://pag.ae/bkBFVym", '_blank'); // sem cupom 3
-		}
-		else if (senha != "3333"){
-			alert('cupom invalido');
-			form1.senha.focus();
-			return false;
-		}
-		else
-			window.open("https://pag.ae/bgB916K",'_blank');	// com cupom 3
-	}
-
-	
-
-}
-
-
-
 $(document).ready(function () {
 
     var navListItems = $('div.setup-panel div a'),
@@ -200,3 +144,4 @@ $(function() {
         reader.readAsDataURL(file);
     });                
 });
+    
